@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@ body {
     background-color: #fdf8f0; 
     display: flex;
     flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #333333; 
     min-height: 100vh; 
 }
@@ -132,7 +131,7 @@ form button {
     font-size: 16px;
     font-weight: 700;
     margin-top: 25px;
-    transition: background-color 0.3s ;
+    transition: background-color 0.3s;
 }
 
 form button:hover {
@@ -161,31 +160,72 @@ form button:hover {
 footer {
     background-color: #0b0b0b;
     text-align: center;
-    height: 20vh;
-    padding-top: 10px;
     color: #fdf8f0;
+    padding: 20px 0;
+    height: auto;
 }
 
 footer .columna {
-    height: 120px;
     display: inline-block;
     vertical-align: top;
-    border: 2px solid #333;
     width: 25vw;
-    padding: 10px;
+    min-width: 200px;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
     box-sizing: border-box;
 }
 
-footer a {
-    color: #fdf8f0;
-    text-decoration: none;
+footer h3 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
-footer a:hover {
-    text-decoration: underline;
-}
+
 footer ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin: 6px 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #cccccc;
+    text-decoration: underline;
+}
+
+#columna3 {
+    text-align: center;
+}
+
+#columna3 ul {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+#columna3 ul li img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+#columna3 ul li img:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -223,32 +263,36 @@ footer ul {
     .contacto {
         padding: 25px 20px;
     }
-}
 
-#columna3 {
-  text-align: center;
-  color: #ffffff;
-}
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 10px;
+        height: auto;
+    }
 
-#columna3 h3 {
-  color: #ffffff; 
-font-family: 'Montserrat', sans-serif;
-  margin-bottom: 10px;
-}
+    footer .columna {
+        width: 85%;
+        margin: 8px 0;
+        border: 1px solid #333;
+        padding: 20px;
+    }
 
-#columna3 ul {
-  list-style: none;
-  display: flex;
-  justify-content: center; 
-  padding: 0;
-  margin: 0;
-}
+    footer h3 {
+        font-size: 16px;
+    }
 
-#columna3 ul li {
-  margin: 0 8px; 
-}
+    footer a {
+        font-size: 14px;
+    }
 
-#columna3 ul li img {
-  width: 30px;
-  height: 30px;
+    #columna3 ul {
+        gap: 15px;
+    }
+
+    #columna3 ul li img {
+        width: 26px;
+        height: 26px;
+    }
 }
